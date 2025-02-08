@@ -1,0 +1,76 @@
+:root {
+    --pink: #f14e95;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg-landingpage.png);
+    z-index: -1;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; /* Agar gambar tidak diulang */
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
+}
+
+.hero h4 {
+    font-size: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.hero h1, .hero h2, .hero p, .hero h4 {
+    text-shadow: var(--shadow);
+}
+
+.hero a {
+    color: var(--pink);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color: var(--pink);
+    color: white;
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+}
