@@ -1,6 +1,6 @@
 :root {
     --pink: #f14e95;
-    --bg: #0a0a0a;
+    --bg: #272829;
     --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 
@@ -125,6 +125,52 @@ body {
 }
 
 
+
+/* info */
+.info {
+    background-color: var(--bg);
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+}
+
+.info h2 {
+    color: var(--pink);
+    font-family: "Sacramento";
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.info .alamat {
+    font-size: 1.1rem;
+}
+
+.info .btn-klik {
+    font-size: 1.1rem;
+}
+
+.info .card {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid #999;
+    color: white !important;
+}
+
+.info .card-header {
+    border-bottom: 1px solid #999 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+    font-size: 1rem;
+}
+
+.info .card-footer {
+    border-top: 1px solid #999 !important;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
 @media (max-width: 992px) {
     html {
         font-size: 75%;
@@ -141,6 +187,10 @@ body {
     .my-navbar .nav-link{
         font-size: 2rem;
         text-align: center;
+    }
+
+    .sticky-top {
+        overflow: hidden;
     }
 }
 
