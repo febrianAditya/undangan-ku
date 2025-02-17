@@ -24,7 +24,7 @@
             <h1>Wulan Guritno</h1>
             <p>Akan melangsungkan resepsi pernikahan:</p>
             <div class="countdown simply-countdown"></div>
-            <a href="#undangan" class="btn btn-lg mt-5">Lihat Undangan</a>
+            <a href="#home" class="btn btn-lg mt-5">Lihat Undangan</a>
         </main>
     </section>
 
@@ -98,7 +98,7 @@
     <section id="info" class="info">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
+          <div class="col-md-8 col-10 text-center mt-5">
             <h2>Informasi Acara</h2>
             <p class="alamat mt-5">
               Alamat: Gedong Putih Villa Triniti, <br> Jl. Sersan Bajuri, Cihideung, Kec. Parongpong, Kabupaten Bandung Barat
@@ -158,6 +158,72 @@
       </div>
     </section>
 
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8 col-10 text-center">
+            <span>Bagaimana cinta kami bersemi</span>
+            <h2>Cerita kami</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum esse eum sit fugiat nobis quisquam?</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/id/233/300/300);">
+                  
+                </div>
+
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Pertama Bertemu</h3>
+                      <span>20 Februari 2013</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius dolores ab in ipsa?</p>
+                    </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/301/301);">
+                  
+                </div>
+
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Kedua Bertemu</h3>
+                      <span>20 Februari 2013</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius dolores ab in ipsa?</p>
+                    </div>
+                </div>
+              </li>
+
+              <li class="timeline">
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/300/300);">
+                  
+                </div>
+
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Ketiga Bertemu</h3>
+                      <span>20 Februari 2013</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius dolores ab in ipsa?</p>
+                    </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="countdown/simplyCountdown.umd.js"></script>
@@ -180,18 +246,12 @@
     <script>
       const hamburger = document.querySelector('.navbar-toggler')
       const stickyTop = document.querySelector('.sticky-top')
-      const buttonClose = document.querySelector('btn-close')
+      const myOffcanvas = document.getElementById('offcanvas')
 
       hamburger.addEventListener('click', () => {
         stickyTop.style.overflow = 'visible'
       })
-
-      // buttonClose.addEventListener('hidden.bs.offcanvas', () => {
-      //   stickyTop.style.overflow = 'hidden'
-      // })
-
-
-      const myOffcanvas = document.getElementById('offcanvas')
+      
       myOffcanvas.addEventListener('hidden.bs.offcanvas', event => {
         stickyTop.style.overflow = 'hidden'
       })
